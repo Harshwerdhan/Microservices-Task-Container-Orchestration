@@ -83,18 +83,18 @@ we will deploy microservices using EKS clustor and using minikube
   ![remote docker repo](submission/screenshots/remote-docker-repo.png)
 
 ### File structure for kubernets setup
-'''deployments
+```deployments
   gateway-service.yaml
   order-service.yaml
   product-service.yaml
   user-service.yaml
-'''
-'''services
+```
+```services
   gateway-service.yaml
   order-service.yaml
   product-service.yaml
   user-service.yaml
-'''
+```
 ### Run and Test
 - Deployment running    
  ![deploy](submission/screenshots/deploy-pod-running.png)
