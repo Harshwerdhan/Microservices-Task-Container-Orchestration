@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: product-service
-          image: product-service:v1
+          image: harsh24314/product-service:v1
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 3001

@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: gateway-service
-          image: gateway-service:v1
+          image: harsh24314/gateway-service:v1
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 3003

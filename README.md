@@ -66,3 +66,42 @@ This document provides details on testing various services after running the `do
 2. Once the services are running, use the above endpoints to verify the functionality.
 
 Happy testing!
+
+# Deploying microservices using Kubernets
+we will deploy microservices using EKS clustor and using minikube 
+
+## Task we will cover
+- [x] Containerised each microservices
+- [x] Tag and push all build image to the docker hub
+- [x] File structure for kubernets setup
+- [x] Test endpoints
+
+### Containersied microservices and Push image to Docker Hub
+- Add `Dockerfile` in each microservice folder
+- Build and push all images using `bash script` [bash script for push](Microservices/build-and-push.sh)
+- Screenshort   
+  ![remote docker repo](submission/screenshots/remote-docker-repo.png)
+
+### File structure for kubernets setup
+'''deployments
+  gateway-service.yaml
+  order-service.yaml
+  product-service.yaml
+  user-service.yaml
+'''
+'''services
+  gateway-service.yaml
+  order-service.yaml
+  product-service.yaml
+  user-service.yaml
+'''
+### Run and Test
+- Deployment running    
+ ![deploy](submission/screenshots/deploy-pod-running.png)
+
+- Service running   
+  ![service](submission/screenshots/services-pod-running.png)
+
+
+
+
